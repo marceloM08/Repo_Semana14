@@ -16,7 +16,7 @@ def generar_numeros(cantidad):
     tiempo = fin - inicio
     return datos, tiempo
 
-def ordenar(lista):
+def ordenamineto_Burbuja(lista):
     n = len(lista)
     for i in range(n):
         for j in range(0, n - i - 1):
@@ -31,7 +31,7 @@ datos, tiempo_gen = generar_numeros(cantidad)
 print(f"Tiempo de generación: {tiempo_gen:.4f} segundos")
 print("Fin de generación")
 print("\nLista original (primeros 20 elementos):")
-print(datos[:20])
+print(datos[:40])
 print("\nOrdenando...")
 ini = time.perf_counter()
 datos_ordenados = ordenar(datos.copy())
